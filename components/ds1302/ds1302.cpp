@@ -80,7 +80,7 @@ void DS1302Component::dump_config() {
   LOG_PIN("  Pin CS: ", this->cs_pin_);
   LOG_PIN("  Pin CLK: ", this->clk_pin_);
   LOG_PIN("  Pin DIO: ", this->dio_pin_);
-  ESP_LOGCONFIG(TAG, "  Timezone: '%s'", this->timezone_.c_str());
+  //ESP_LOGCONFIG(TAG, "  Timezone: '%s'", this->timezone_.c_str());
 }
 
 float DS1302Component::get_setup_priority() const { return setup_priority::HARDWARE; }
